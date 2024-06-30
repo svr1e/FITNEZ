@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations on Completing Level 1!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('your-background-image-url.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        .congrats-text {
+            margin-bottom: 30px;
+        }
+
+        .next-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Level 1</h1>
+        <div class="tasks">
+            <h2>Tasks:</h2>
+            <ul>
+                <li>completed 15 minutes of cardio exercises.</li>
+               
+            </ul>
+        </div>
+        <div class="complications">
+            <h2>benifits</h2>
+            <ul>
+                <li>Improves cardiovascular health and endurance.</li>
+                <li>Helps in burning calories and managing weight.</li>
+                <li>Reduces the risk of heart diseases.</li>
+            </ul>
+        </div>
+        <div class="timer">
+            <h2>Timer:</h2>
+            <div id="timerDisplay">
+                <span id="minutes">00</span>:<span id="seconds">15</span>
+            </div>
+        </div>
+        <div class="next-section">
+            <p>Redirecting to Level 2 in <span id="countdown">15</span> seconds...</p>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer for redirecting to Level 3 after 15 seconds
+        let countdown = 15; // Countdown duration in seconds
+
+        // Function to update the countdown display and redirect
+        function startCountdown() {
+            let countdownDisplay = document.getElementById('countdown');
+            countdownDisplay.textContent = countdown;
+
+            if (countdown > 0) {
+                countdown--;
+                setTimeout(startCountdown, 1000); // Update every second
+            } else {
+                redirectToNextLevel();
+            }
+        }
+
+        // Start the countdown when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            startCountdown();
+        });
+
+        // Redirect function
+        function redirectToNextLevel() {
+            // Replace with appropriate next level URL
+            window.location.href = 'flevel2.html';
+        }
+    </script>
+</body>
+</html>
+

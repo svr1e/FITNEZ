@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('"C:\Users\saide\Downloads\meghan-holmes-buWcS7G1_28-unsplash.jpg"'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; 
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar .brand-name a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+.navbar .nav-links li {
+    float: left;
+}
+
+.navbar .nav-links li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar .nav-links li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.navbar .nav-links .dropdown {
+    display: inline-block;
+}
+
+.navbar .nav-links .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar .nav-links .submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links .submenu ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-links .submenu ul li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .nav-links .submenu ul li a:hover {
+    background-color: #575757;
+}
+
+.navbar .nav-links .dropdown:hover .submenu {
+    display: block;
+}
+
+
+
+
+
+
+*{
+
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+  }
+  body{
+    background-color: gray;
+  }
+  .card {
+    max-width: 800px;
+    margin: 20px auto; /* Center align and provide spacing */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  .parent {
+    position: relative;
+  }
+  
+  .parent img {
+    display: block;
+    object-fit: cover;
+    width: 100%; /* Ensure image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .parent:hover img {
+    opacity: 0.8; /* Reduce image opacity on hover */
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Occupy full width of parent */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff;
+    padding: 20px;
+    transform: translateY(100%); /* Move text out of view initially */
+    opacity: 0; /* Hide text initially */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+  }
+  
+  .parent:hover .text {
+    transform: translateY(0); /* Move text into view on hover */
+    opacity: 1; /* Show text on hover */
+  }
+  
+  .text h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .text p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .text a button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button */
+  }
+  
+  .text a button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .buton2 {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline element */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.buton2:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social-media {
+    margin-bottom: 10px;
+}
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color: #1da1f2; /* Twitter blue color as an example */
+}
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #1da1f2; /* Twitter blue color as an example */
+}
+.footer-bottom {
+    margin-top: 10px;
+}
+.social-icon {
+    text-decoration: none;
+}
+.buton2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b5998; /* Facebook blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.buton2:hover {
+    background-color: #2d4373; /* Darker shade of Facebook blue */
+}
+.buton3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ca0bad; /* Facebook blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.buton3:hover {
+    background-color: #8e249a; /* Darker shade of Facebook blue */
+}
+.buton4 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #040404; /* Facebook blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.buton4:hover {
+    background-color: #656a77; /* Darker shade of Facebook blue */
+}

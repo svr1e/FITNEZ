@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar .brand-name a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+.navbar .nav-links li {
+    float: left;
+}
+
+.navbar .nav-links li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar .nav-links li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.navbar .nav-links .dropdown {
+    display: inline-block;
+}
+
+.navbar .nav-links .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar .nav-links .submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links .submenu ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-links .submenu ul li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .nav-links .submenu ul li a:hover {
+    background-color: #575757;
+}
+
+.navbar .nav-links .dropdown:hover .submenu {
+    display: block;
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    max-width: 800px;
+    margin: 20px auto; /* Center align and provide spacing */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  .parent {
+    position: relative;
+  }
+  
+  .parent img {
+    display: block;
+    object-fit: cover;
+    width: 100%; /* Ensure image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .parent:hover img {
+    opacity: 0.8; /* Reduce image opacity on hover */
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Occupy full width of parent */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff;
+    padding: 20px;
+    transform: translateY(100%); /* Move text out of view initially */
+    opacity: 0; /* Hide text initially */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+  }
+  
+  .parent:hover .text {
+    transform: translateY(0); /* Move text into view on hover */
+    opacity: 1; /* Show text on hover */
+  }
+  
+  .text h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .text p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .text a button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button */
+  }
+  
+  .text a button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
